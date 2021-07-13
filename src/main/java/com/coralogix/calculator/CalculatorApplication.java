@@ -1,13 +1,11 @@
 package com.coralogix.calculator;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class CalculatorApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(CalculatorApplication.class, args);
-	}
-
+public class sum {
+    int add(int first,int second){
+        return first+second;
+    }
+    public static void main(String[] args){
+        sum obj=new sum();
+        System.out.println(obj.add(4,5));
+    }
 }
